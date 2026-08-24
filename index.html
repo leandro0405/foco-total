@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Trabalho - Países do Mundo</title>
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    }
+
+    body {
+      background-color: #ffffff;
+      color: #222222;
+      overflow-x: hidden;
+    }
+
+    .country-card {
+      min-height: 100vh;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      text-align: center;
+      padding: 2rem;
+    }
+
+    /* Título grande com imagem recortada dentro do texto */
+    .country-name {
+      font-size: 11vw;
+      font-weight: 900;
+      text-transform: uppercase;
+      letter-spacing: 4px;
+      line-height: 1;
+      margin-bottom: 1.5rem;
+      
+      /* Efeito da imagem preenchendo o texto e acompanhando a rolagem */
+      background-size: cover;
+      background-position: center;
+      background-attachment: fixed;
+      -webkit-background-clip: text;
+      -webkit-text-fill-color: transparent;
+      background-clip: text;
+      color: transparent;
+    }
+
+    /* Imagens de fundo para o texto de cada país */
+    .holanda {
+      background-image: url('https://images.unsplash.com/photo-1512470876302-972faa2aa9a4?q=80&w=1600');
+    }
+
+    .brasil {
+      background-image: url('https://images.unsplash.com/photo-1483729558449-99ef09a8c325?q=80&w=1600');
+    }
+
+    .polonia {
+      background-image: url('https://images.unsplash.com/photo-1519197924294-4ba991a11128?q=80&w=1600');
+    }
+
+    .hungria {
+      background-image: url('https://images.unsplash.com/photo-1518684079-3c830dcef090?q=80&w=1600');
+    }
+
+    /* Descrição e botão */
+    .country-description {
+      max-width: 550px;
+      font-size: 1.2rem;
+      line-height: 1.6;
+      color: #555555;
+      margin-bottom: 2rem;
+    }
+
+    .btn-more {
+      display: inline-block;
+      padding: 14px 32px;
+      border: 2px solid #111111;
+      background-color: transparent;
+      color: #111111;
+      text-decoration: none;
+      font-weight: 700;
+      text-transform: uppercase;
+      letter-spacing: 1px;
+      border-radius: 50px;
+      transition: all 0.3s ease;
+    }
+
+    .btn-more:hover {
+      background-color: #111111;
+      color: #ffffff;
+      transform: translateY(-3px);
+    }
+
+    @media (max-width: 768px) {
+      .country-name {
+        font-size: 18vw;
+      }
+    }
+  </style>
+</head>
+<body>
+
+  <!-- Holanda -->
+  <section class="country-card">
+    <h1 class="country-name holanda">Holanda</h1>
+    <p class="country-description">
+      Conhecida por seus canais históricos, campos de tulipas vibrantes e tradição no uso de bicicletas como principal meio de transporte.
+    </p>
+    <a href="#" class="btn-more">Saiba mais</a>
+  </section>
+
+  <!-- Brasil -->
+  <section class="country-card">
+    <h1 class="country-name brasil">Brasil</h1>
+    <p class="country-description">
+      O maior país da América do Sul, famoso por sua biodiversidade única na Amazônia, praias tropicais e uma rica diversidade cultural.
+    </p>
+    <a href="#" class="btn-more">Saiba mais</a>
+  </section>
+
+  <!-- Polônia -->
+  <section class="country-card">
+    <h1 class="country-name polonia">Polônia</h1>
+    <p class="country-description">
+      Localizada no centro europeu, destaca-se por sua arquitetura medieval bem preservada, história marcante e paisagens naturais belíssimas.
+    </p>
+    <a href="#" class="btn-more">Saiba mais</a>
+  </section>
+
+  <!-- Hungria -->
+  <section class="country-card">
+    <h1 class="country-name hungria">Hungria</h1>
+    <p class="country-description">
+      Famosa por sua encantadora capital Budapeste, dividida pelo Rio Danúbio, e por suas históricas fontes termais e arquitetura impressionante.
+    </p>
+    <a href="#" class="btn-more">Saiba mais</a>
+  </section>
+
+</body>
+</html>
