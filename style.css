@@ -11,7 +11,7 @@ body {
   overflow-x: hidden;
 }
 
-/* Cada seção ocupa a tela inteira */
+/* Cada seção do país ocupa a altura total da tela */
 .country-card {
   min-height: 100vh;
   display: flex;
@@ -31,7 +31,7 @@ body {
   line-height: 1;
   margin-bottom: 1.5rem;
   
-  /* Efeito da imagem dentro do texto com Paralaxe ao rolar a página */
+  /* Efeito da imagem dentro do texto acompanhando o scroll (Paralaxe) */
   background-size: cover;
   background-position: center;
   background-attachment: fixed;
@@ -41,24 +41,24 @@ body {
   color: transparent;
 }
 
-/* Imagens para cada país */
+/* --- Suas Imagens do Pexels --- */
 .holanda {
-  background-image: url('watermarked_img_14108056133691445435.png');
+  background-image: url('pexels-hoffman11-34169482.jpg');
 }
 
 .brasil {
-  background-image: url('watermarked_img_9927813432295398650.png');
+  background-image: url('pexels-sonny-vermeer-505472791-30972283.jpg');
 }
 
 .polonia {
-  background-image: url('watermarked_img_17757698546791914121.png');
+  background-image: url('pexels-dagmara-dombrovska-22732579-10180370.jpg');
 }
 
 .hungria {
-  background-image: url('watermarked_img_14586068747202306085.png');
+  background-image: url('pexels-atho-goodlife-2157759967-37668807.jpg');
 }
 
-/* Estilo do parágrafo de descrição */
+/* Estilo da descrição */
 .country-description {
   max-width: 550px;
   font-size: 1.2rem;
@@ -88,7 +88,7 @@ body {
   transform: translateY(-3px);
 }
 
-/* Adaptação para telas de celular */
+/* Ajuste para telas pequenas (Celulares) */
 @media (max-width: 768px) {
   .country-name {
     font-size: 18vw;
