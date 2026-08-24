@@ -11,7 +11,7 @@ body {
   overflow-x: hidden;
 }
 
-/* Cada seção do país ocupa a altura total da tela */
+/* Cada seção ocupa a tela inteira */
 .country-card {
   min-height: 100vh;
   display: flex;
@@ -22,7 +22,7 @@ body {
   padding: 2rem;
 }
 
-/* Título gigantesco que usa a foto como preenchimento de texto */
+/* Título gigantesco que exibe a foto dentro do texto */
 .country-name {
   font-size: 12vw;
   font-weight: 900;
@@ -31,7 +31,10 @@ body {
   line-height: 1;
   margin-bottom: 1.5rem;
   
-  /* Efeito da imagem dentro do texto acompanhando o scroll (Paralaxe) */
+  /* Cor de segurança caso a foto não carregue (evita texto invisível) */
+  background-color: #222222;
+  
+  /* Efeito da imagem dentro do texto acompanhando a rolagem */
   background-size: cover;
   background-position: center;
   background-attachment: fixed;
@@ -41,7 +44,34 @@ body {
   color: transparent;
 }
 
-/* --- Suas Imagens do Pexels --- */
+/* 
+   =====================================================
+   OPÇÃO 1: NOMES SIMPLIFICADOS (RECOMENDADO)
+   Se você renomeou as imagens para holanda.jpg, brasil.jpg, etc.
+   =====================================================
+*/
+.holanda {
+  background-image: url('holanda.jpg');
+}
+
+.brasil {
+  background-image: url('brasil.jpg');
+}
+
+.polonia {
+  background-image: url('polonia.jpg');
+}
+
+.hungria {
+  background-image: url('hungria.jpg');
+}
+
+/* 
+   =====================================================
+   OPÇÃO 2: NOMES ORIGINAIS DO PEXELS
+   Se NÃO renomeou os arquivos, apague o bloco de cima e use este:
+   =====================================================
+   
 .holanda {
   background-image: url('pexels-hoffman11-34169482.jpg');
 }
@@ -57,8 +87,9 @@ body {
 .hungria {
   background-image: url('pexels-atho-goodlife-2157759967-37668807.jpg');
 }
+*/
 
-/* Estilo da descrição */
+/* Descrição do país */
 .country-description {
   max-width: 550px;
   font-size: 1.2rem;
@@ -67,7 +98,7 @@ body {
   margin-bottom: 2rem;
 }
 
-/* Botão Saiba Mais */
+/* Botão Saiba mais */
 .btn-more {
   display: inline-block;
   padding: 14px 32px;
@@ -88,7 +119,7 @@ body {
   transform: translateY(-3px);
 }
 
-/* Ajuste para telas pequenas (Celulares) */
+/* Adaptação para celular */
 @media (max-width: 768px) {
   .country-name {
     font-size: 18vw;
